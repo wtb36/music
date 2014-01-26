@@ -24,3 +24,11 @@ f8 f f f c4 c
 c2 c 
 c8 c d e f4 f
 }
+\addlyrics {
+Mi -- au, mi -- au hörst Du mich schrei -- en?
+Mi -- au, mi -- au, ich will Dich frei -- en.
+Folgst Du mir aus den Ge -- mä -- chern,
+Sin -- gen wir hoch auf den Dä -- chern.
+Mi -- au, komm ge -- lieb -- te Kat -- ze,
+Mi -- au, reich mir Dei -- ne Tat -- ze!
+}
