@@ -16,20 +16,29 @@
 \clef treble
 \key f \major
 \time 3/4
+\set Timing.beamExceptions = #'()
+\set Timing.baseMoment = #(ly:make-moment 1/8)
+\set Timing.beatStructure = #'(1 1 1 1 1 1)
 \partial 4. c8 f c |
 \time 2/4
 f4 a |
 \time 3/4
-g8 g f8 c8 f c |
+\set Timing.beamExceptions = #'()
+\set Timing.baseMoment = #(ly:make-moment 1/8)
+\set Timing.beatStructure = #'(1 1 1 1 1 1)
+g8[ g] f8 c8 f[  c] |
 \time 2/4
 f4 a 
 \time 3/4
-c8 c a g8 f g |
-a8 c bes a g g f4. \bar "|."
+\set Timing.beamExceptions = #'()
+\set Timing.baseMoment = #(ly:make-moment 1/8)
+\set Timing.beatStructure = #'(1 1 1 1 1 1)
+c8[  c] a g8 f[ g] |
+a8[  c bes] a g[  g] f4. \bar "|."
 }
 
 \addlyrics {
 Jetzt fängt das schö -- ne Früh -- jahr an
 und al -- les fängt zu blü -- hen an
-auf grü -- ner Hei -- de und ü -- ber -- all.
+auf grü -- ner Hei - de und ü -- ber -- all.
 }
