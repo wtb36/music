@@ -12,7 +12,148 @@
   tagline = ##f
 }
 
-symbols =
+voice =
+{
+  \time 4/4
+  \key g \major
+  \relative c'
+  {
+    r1 r1 r1 r1
+    r1 r1 r1 r1
+
+    r4 r8 b8 b4 c8 d~
+    d4 r8 c b4 c8 d~
+    d4 r8 c b4 c8 d~
+    d4 c8 e, r4 c'8 b~
+
+    b2 r4 g8 a
+    b2 d
+    e,1~
+    e1
+
+    r2 b'4 c8 d~
+    d4 r b c8 d~
+    d2 b4 c8 d~
+    d e4 e,4. c'8 b~
+
+    b2 r4 g8 a
+    b2 a
+    g1
+    r1
+
+    r4 a8 a a4 a8 a
+    b4 b8 a4 g4 e8~
+    e4 g2.
+    r1
+
+    r4 a8 a a4 a8 a
+    b4 b8 a4 g4 g8~
+    g1
+    r1
+
+    r4 a8 a a4 a8 a
+    b4 b8 b a4 g8 e8~
+    e4 g2.
+    r1
+
+    r4 d'8 d d4 b8 b
+    c4 b8 a4 g4 g8~
+    g1
+    r2 r4 r8 d'8
+
+    d4 g8 g~ g4 a8 a~
+    a4 b8 b~ b4 r8 d,8
+    d4 fis8 fis~ fis4 g8 g~
+    g4 a8 a~ a4 r8 g8
+
+    c4 b8 b~ b4 a8 a~
+    a4 g8 g~ g4 a8 e~
+    e1
+    r2 r4 r8 d8
+
+    d4 g8 g~ g4 a8 a~
+    a4 b8 b~ b4 r8 d,8
+    d4 fis8 fis~ fis4 g8 g~
+    g4 a8 a~ a4 r8 g8
+
+    c4 b8 b~ b4 a8 a~
+    a4 g4 g8 a8 g4~
+    g1
+    r2 r4 r8 d8
+
+    e4 d8 d~ d4 b8 d
+    e4 d b8 b b4~
+
+    b4 r r2
+    r1 r1 r1
+
+    r4 r8 b8 b4 c8 d~
+    d4 r8 c b4 c8 d~
+    d4 r8 c b4 c8 d~
+    d4 c8 e, r4 c'8 b~
+
+    b2 r4 g8 a
+    b2 d
+    e,1~
+    e1
+
+    r2 b'4 c8 d~
+    d4 r b c8 d~
+    d2 b4 c8 d~
+    d e4 e,4. c'8 b~
+
+    b2 r4 g8 a
+    b2 a
+    g1
+    r1
+
+    r4 a8 a a4 a8 a
+    b4 b8 a4 g4 e8~
+    e4 g2.
+    r1
+
+    r4 a8 a a4 a8 a
+    b4 b8 a4 g4 g8~
+    g1
+    r1
+
+    r4 a8 a a4 a8 a
+    b4 b8 b a4 g8 e8~
+    e4 g2.
+    r1
+
+    r4 d'8 d d4 b8 b
+    c4 b8 a4 g4 g8~
+    g1
+    r2 r4 r8 d'8
+
+    d4 g8 g~ g4 a8 a~
+    a4 b8 b~ b4 r8 d,8
+    d4 fis8 fis~ fis4 g8 g~
+    g4 a8 a~ a4 r8 g8
+
+    c4 b8 b~ b4 a8 a~
+    a4 g8 g~ g4 a8 e~
+    e1
+    r2 r4 r8 d8
+
+    d4 g8 g~ g4 a8 a~
+    a4 b8 b~ b4 r8 d,8
+    d4 fis8 fis~ fis4 g8 g~
+    g4 a8 a~ a4 r8 g8
+
+    c4 b8 b~ b4 a8 a~
+    a4 g4 g8 a8 g4~
+    g1
+    r2 r4 r8 d8
+
+    e4 d8 d~ d4 b8 d
+    e4 d b8 b b4~
+
+  }
+}
+
+guitar =
 {
   \time 4/4
   \key g \major
@@ -158,8 +299,12 @@ symbols =
 
 \score
 {
-<<
-  \new Staff { \clef "G_8" \symbols }
-  \new TabStaff { \symbols }
->>
+  <<
+    \new Staff { \voice }
+    \new StaffGroup  \with { instrumentName = #"Gitarre" }
+    <<
+    \new Staff { \clef "G_8" \guitar }
+    \new TabStaff { \guitar }
+    >>
+  >>
 }
