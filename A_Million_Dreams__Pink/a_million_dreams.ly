@@ -4,13 +4,7 @@
   line-width = 16 \cm
 }
 
-\header{
-  title = "A Million Dreams"
-  poet = "Ziv Zaifman, Hugh Jackman & Michelle Williams"
-  composer = "P!nk"
-  copyright = "Engraved with lilypond: W. Braun."
-  tagline = ##f
-}
+\include "header.ly"
 
 voice =
 {
@@ -19,10 +13,12 @@ voice =
   \relative c'
   {
     % 1-8
+    \mark \markup{ \box "Intro" }
     R1 R1 R1 R1
     R1 R1 R1 R1
 
     % 9-12
+    \mark \markup { \box "Verse 1" }
     r4 r8 b8 b4 c8 d~
     d4 r8 c b4 c8 d~
     d4 r8 c b4 c8 d~
@@ -46,7 +42,8 @@ voice =
     g1
     R1
 
-    % 25-28 PreChorus
+    % 25-28
+    \mark \markup { \box "PreChorus" }
     r4 a8 a a4 a8 a
     b4 b8 a4 g4 e8~
     e4 g2.
@@ -70,7 +67,8 @@ voice =
     g1
     r2 r4 r8 d'8
 
-    % 41 Chorus
+    % 41
+    \mark \markup { \box "Chorus" }
     d4 g8 g~ g4 a8 a~
     a4 b8 b~ b4 r8 d,8
     d4 fis8 fis~ fis4 g8 g~
@@ -102,7 +100,8 @@ voice =
     b4 r r2
     R1 R1 R1
 
-    % 63 Verse
+    % 63
+    \mark \markup { \box "Verse 2" }
     r2 b4 c8 d~
     d4 r4 b4 c8 d~
     d4 r4 b4 c8 d~
@@ -126,7 +125,8 @@ voice =
     c1
     R1
 
-    % 79 PreChorus
+    % 79
+    \mark \markup { \box "PreChorus" }
     r4 a8 a a4 a8 a
     b4 b8 a4 g4 e8~
     e4 g2.
@@ -150,7 +150,8 @@ voice =
     e1
     r2 r4 r8 d8
 
-    % 95 Chorus
+    % 95
+    \mark \markup { \box "Chorus" }
     d4 g8 g~ g4 a8 a~
     a4 b8 b~ b4 r8 d,8
     d4 fis8 fis~ fis4 g8 g~
@@ -178,7 +179,8 @@ voice =
     e4 d8 d~ d4 b8 d
     e4 d b8 b b4
 
-    % 113 Bridge
+    % 113
+    \mark \markup { \box "Bridge" }
     r4. g'8 a b4.
     g4 r8 g a b4.
     g4 r e8 e fis4
@@ -205,7 +207,8 @@ voice =
     a1~
     a1
 
-    % 134 Chorus
+    % 134
+    \mark \markup { \box "Chorus" }
     d,4 g8 g~ g4 a8 a~
     a4 b8 b~ b4 r8 d,8
     d4 fis8 fis~ fis4 g8 g~
@@ -521,13 +524,19 @@ guitar =
 {
   \score
   {
+    \new StaffGroup
     <<
       \chords { \akkorde }
-      \new Staff = "gesang" \new Voice = "Gesang" { \teeny \clef "alto" \voice }
+      \new Staff = "gesang"
+      \new Voice = "Gesang" { \clef "alto" \voice }
       \new Lyrics \with { \huge alignAboveContext = #"gesang" }
         \lyricsto "Gesang" { \voiceText }
     >>
   }
+  %\paper
+  %{
+  %system-separator-markup = \slashSeparator
+  %}
 }
 \book
 {
