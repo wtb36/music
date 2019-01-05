@@ -281,60 +281,60 @@ voice =
 voiceText =
 \lyricmode {
 I close my eyes and I can see
-A world that's wai- ting up for me
+a world that's wai- ting up for me
 that I call my own.
-Through the dark, through the door
-Through where no one’s been be- fore
-But it feels like home
+Through the dark, through the door,
+through where no one’s been be- fore,
+but it feels like home.
 
-They can say, they can say it all sounds cra- zy
-They can say, they can say I've lost my mind
-I don't care, I don’t care, if they call me cra- zy
-We can live in a world that we de- sign
+They can say, they can say it all sounds cra- zy.
+They can say, they can say I've lost my mind.
+I don't care, I don’t care, if they call me cra- zy.
+We can live in a world that we de- sign.
 
-'Cause eve- ry night, I lie in bed
-The brigh- test co- lors fill my head
-A mil- lion dreams are kee- ping me a- wake
-I think of what the world could be
-A vi- sion of the one I see
-A mil- lion dreams is all it's gon- na take
-A mil- lion dreams for the world we're gon- na make
+'Cause eve- ry night, I lie in bed,
+the brigh- test co- lors fill my head.
+A mil- lion dreams are kee- ping me a- wake.
+I think of what the world could be,
+a vi- sion of the one I see.
+A mil- lion dreams is all it's gon- na take,
+a mil- lion dreams for the world we're gon- na make.
 
 There's a house we can build
-Eve- ry room in- side is filled with things from far a- way
-Spe- cial things I com- pile
-Each one there to make you smile on a rai- ny day
+eve- ry room in- side is filled with things from far a- way.
+Spe- cial things I com- pile,
+each one there to make you smile on a rai- ny day.
 
-They can say, they can say it all sounds cra- zy
-They can say, they can say we've lost our minds
-I don't care, I don't care if they call us cra- zy
-Run a- way to a world that we de- sign
+They can say, they can say it all sounds cra- zy.
+They can say, they can say we've lost our minds.
+I don't care, I don't care if they call us cra- zy.
+Run a- way to a world that we de- sign.
 
-'Cause eve- ry night, I lie in bed
-The brigh- test co- lors fill my head
-A mil- lion dreams are kee- ping me a- wake
-I think of what the world could be
-A vi- sion of the one I see
-A mil- lion dreams is all it’s gon- na take
-A mil- lion dreams for the world we’re gon- na make
+'Cause eve- ry night, I lie in bed,
+the brigh- test co- lors fill my head.
+A mil- lion dreams are kee- ping me a- wake.
+I think of what the world could be,
+a vi- sion of the one I see.
+A mil- lion dreams is all it’s gon- na take,
+a mil- lion dreams for the world we’re gon- na make.
 
-How- e- ver big, how- e- ver small
-Let me be part of it all
-Share your dreams with me
-We may be right, we may be wrong
-But I wan- na bring you a- long to the world I see
-To the world we close our eyes to see
-We close our eyes to see
+How- e- ver big, how- e- ver small,
+let me be part of it all.
+Share your dreams with me.
+We may be right, we may be wrong,
+but I wan- na bring you a- long to the world I see,
+to the world we close our eyes to see,
+we close our eyes to see
 
-Eve- ry night, I lie in bed
-The brigh- test co- lors fill my head
-A mil- lion dreams are kee- ping me a- wake
-I think of what the world could be
-A vi- sion of the one I see
-A mil- lion dreams is all it's gon- na take
-A mil- lion dreams for the world we're gon- na make
+Eve- ry night, I lie in bed,
+the brigh- test co- lors fill my head.
+A mil- lion dreams are kee- ping me a- wake.
+I think of what the world could be,
+a vi- sion of the one I see.
+A mil- lion dreams is all it's gon- na take,
+a mil- lion dreams for the world we're gon- na make.
 
-For the world we're gon- na make
+For the world we're gon- na make.
 }
 
 akkorde =
