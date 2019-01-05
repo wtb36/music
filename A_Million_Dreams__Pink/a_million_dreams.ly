@@ -1,10 +1,12 @@
 \version "2.16.2"  % necessary for upgrading to future LilyPond versions.  #(set-global-staff-size 26)
 
-\paper {
-  line-width = 16 \cm
-}
-
 \include "header.ly"
+\header{
+title = "A Million Dreams"
+poet = "Ziv Zaifman, Hugh Jackman & Michelle Williams"
+composer = "P!nk"
+tagline = "##f"
+}
 
 voice =
 {

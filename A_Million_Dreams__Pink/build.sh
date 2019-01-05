@@ -1,9 +1,9 @@
-echo \\header\{ > header.ly
-echo title = \"A Million Dreams\" >> header.ly
-echo poet = \"Ziv Zaifman, Hugh Jackman \& Michelle Williams\" >> header.ly
-echo composer = \"P!nk\" >> header.ly
-echo tagline = "##t" >> header.ly
-git describe --dirty >> header.ly
+echo \\paper\{ > header.ly
+echo line-width = 16 \\cm >> header.ly
+echo oddFooterMarkup = \\markup \{ \\fill-line \{>> header.ly
+echo W.Braun `git describe --dirty` `date +%Y-%m-%d_%H:%M` >> header.ly
+echo \}\} >> header.ly
+echo evenFooterMarkup = \\oddFooterMarkup >> header.ly
 echo \} >> header.ly
 
 lilypond a_million_dreams.ly
