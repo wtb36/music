@@ -8,6 +8,34 @@ composer = "P!nk"
 tagline = "##f"
 }
 
+src = \markup
+{
+  \column
+  {
+    \justify
+    {
+      Text wie von P!nk gesungen in
+      \typewriter{http://y2u.be/L7TN0hyONjw.}
+      Stimmführung und Rhythmus entsprechen näherungsweise der Ausführung
+      im Video, die Taktzählung passt exakt. Akkorde etwas vereinfacht und
+      korrigiert gegenüber
+      \typewriter {http://y2u.be/QHvkxSkJ2us.}
+    }
+  }
+}
+
+srctab = \markup
+{
+  \column
+  {
+    \justify
+    {
+      Tabulatur nach
+      \typewriter{http://y2u.be/cftEQmrlzWI.}
+    }
+  }
+}
+
 voice =
 {
   \time 4/4
@@ -520,6 +548,8 @@ guitar =
       >>
     >>
   }
+  \src
+  \srctab
 }
 
 \book
@@ -535,10 +565,7 @@ guitar =
         \lyricsto "Gesang" { \voiceText }
     >>
   }
-  %\paper
-  %{
-  %system-separator-markup = \slashSeparator
-  %}
+  \src
 }
 \book
 {
@@ -551,4 +578,5 @@ guitar =
         \lyricsto "Gesang" { \voiceText }
     >>
   }
+  \src
 }
