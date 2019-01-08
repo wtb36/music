@@ -147,10 +147,10 @@ voice =
     r2 b4 c8 d~
     d4 r b c8 d~
     d2 g4 fis
-    e4. d8 e4 c
+    e4. d8 e4 g,
 
     % 75
-    e2 r4 g,8 a
+    b2 r4 g8 a
     b2 a
     c1
     R1
@@ -218,7 +218,7 @@ voice =
     e1
     fis4. g8 g4. b,8
     d1
-    r1
+    R1
 
     %121
     r4. g8 a b4.
@@ -232,7 +232,7 @@ voice =
     d2. g8 g
     a4 g fis g
     b2.. d,8
-    e4. d8 cis4 d
+    e4. e8 dis4 e
     b'2. g4
     a1~
     a1
@@ -351,9 +351,9 @@ akkorde =
   g1 d:/fis c c
   % PreChorus
   d1:/fis e2:m d2 c1 c1
+  d1:/fis e2:m g2 c1 a1:m
   d1:/fis e2:m d2 c1 c1
-  d1:/fis e2:m d2 c1 c1
-  d1:/fis e2:m d2 c1 c1
+  d1:/fis e2:m g2 c1 c1
   % Chorus
   g1 g d:/fis d:/fis a:m a:m c c
   g1 g d:/fis d:/fis a:m a:m c c
@@ -367,24 +367,24 @@ akkorde =
   g1 d:/fis c c
   % PreChorus
   d1:/fis e2:m d2 c1 c1
+  d1:/fis e2:m g2 c1 a1:m
   d1:/fis e2:m d2 c1 c1
-  d1:/fis e2:m d2 c1 c1
-  d1:/fis e2:m d2 c1 c1
+  d1:/fis e2:m g2 c1 c1
   % Chorus
   g1 g d:/fis d:/fis a:m a:m c c
   g1 g d:/fis d:/fis a:m a:m c c
   c1 r1
   % Bridge
-  e1:m b:7 g a
+  e1:m e:m/dis e:m/d e:m/cis
   c1 c g g
-  e1:m b:7 g a
-  c1 c g g
-  c1 c d d d
+  e1:m e:m/dis e:m/d e:m/cis
+  a1:m a:m g g
+  c1 c g d d
   % Chorus
   g1 g d:/fis d:/fis a:m a:m c c
   g1 g d:/fis d:/fis a:m a:m c c
   r1 r g d:/fis e:m c
-  r1 r g d:/fis g
+  r1 r g d:/fis c
 
 
 }
@@ -579,4 +579,21 @@ guitar =
     >>
   }
   \src
+}
+
+\book
+{
+  \score
+  {
+    <<
+      \chords { \set Staff.midiInstrument = #"guitar" \akkorde }
+      \new Staff
+      {
+        \set Staff.midiInstrument = #"flute"
+        \new Voice = "Gesang" { \clef "alto" \voice }
+      }
+      \new Lyrics \lyricsto "Gesang" { \voiceText }
+    >>
+    \midi{ \tempo 4 = 140 }
+  }
 }
