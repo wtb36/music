@@ -39,6 +39,18 @@ sopranI =
     e8 e e e ~e4 r
     r4 e c' b
     a2 
+    <<
+      { e8 e e4 e e f8 f f fis ~fis }
+      \new Staff = "sopI" \with {
+        \remove "Time_signature_engraver"
+        alignAboveContext = #"female"
+        firstClef = ##f
+      } <<
+      \new Voice = "SopI" { r4 e4 (c' b a2) }
+      \new Lyrics \with { alignBelowContext = #"sopI" }
+        \lyricsto "SopI" { ooh }
+        >>
+    >>
   }
 }
 
@@ -51,19 +63,15 @@ sopran =
     \mark \markup{ \box "Intro" }
     R1
     e8 e e e ~e4 r
-    << 
-      { e8 e e4 e e f8 f f fis ~fis }
-      \new Staff = "sopI" \with {
-        \remove "Time_signature_engraver"
-        alignAboveContext = #"female"
-        firstClef = ##f
-      } <<
-      \new Voice = "SopI" { r4 e4 (c' b a2) }
-      \new Lyrics \with { alignBelowContext = #"sopI" }
-        \lyricsto "SopI" { ooh }
-        >>
+    <<
+    { s4 e (c' b a2) }
+    \\
+    {}
+    \\
+    { e8 e e4 e e
+    f8 f f fis ~fis }
     >>
-    d,8 e fis
+    d8 e fis
 
     \mark \markup{ \box "Chorus" }
     g1
@@ -256,8 +264,7 @@ bass =
 sopranText =
 \lyricmode {
 _ _ _ _
-_ _ _ _ _
-_ _ _ _ I get a-
+I get a-
 round,
 from town to
 town,
